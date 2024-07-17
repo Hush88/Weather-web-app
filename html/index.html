@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Tags -->
+    <title>Your Weather</title>
+    <meta name="title" content="Your Weather">
+    <meta name="description" content="This is a weather app made by Dima Dediukhin">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/logo.png" type="image">
+
+    <!-- Google Font LInk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Js Links -->
+    <script src="../js/app.js" type="module"></script>
+    <script src="../js/route.js" type="module"></script>
+</head>
+
+<body>
+
+    <!-- 
+        Header
+    -->
+    <header class="header">
+        <div class="container">
+
+            <a href="#/weather?lat=50.4500336&lon=30.5241361" class="logo">
+                <img src="../images/logo.png" width="100" height="100" alt="logo">
+            </a>
+
+            <div class="search-view" data-search-view>
+
+                <div class="search-wraper">
+                    <input type="search" name="search" placeholder="Search city..." autocomplete="off" class="search-field" data-search-field>
+
+                    <span class="m-icon leading-icon">search</span>
+
+                    <button class="icon-btn leading-icon has-state" aria-label="close search" data-search-toggler>
+                        <span class="m-icon">arrow_back</span>
+                    </button>
+                </div>
+
+                <div class="search-result" data-search-result></div>
+
+            </div>
+
+            <div class="header-actions">
+
+                <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
+                    <span class="m-icon icon">search</span>
+                </button>
+
+                <a href="#/current-location" class="btn-primary has-state" data-current-location-btn>
+                    <span class="m-icon">my_location</span>
+
+                    <span class="span">Current Location</span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 
+        Content
+     -->
+    <main>
+        <article class="container" data-container>
+            <!-- 
+                Content Left
+             -->
+            <div class="content-left">
+                <!-- 
+                    Current Weather
+                 -->
+                <section class="section current-weather" aria-label="current weather" data-current-weather>
+                </section>
+
+
+                <!-- 
+                    Forecast
+                 -->
+                <section class="section forecast" aria-label="forecast-label" data-5-day-forecast>
+                </section>
+
+            </div>
+
+            <!-- 
+                Content Right
+             -->
+            <div class="content-right">
+                <!-- 
+                    Today's Highlights
+                 -->
+                <section class="section highlights" aria-label="highlights-label" data-highlights>
+                </section>
+
+                <!-- 
+                    Hourly Forecast
+                 -->
+                <section class="section hourly-forecast" aria-label="hourly forecast" data-hourly-forecast>
+                </section>
+
+                <!-- 
+                    Footer
+                -->
+                <footer class="footer">
+                    <p class="body-3">Made by @dima_dediukhin</p>
+                </footer>
+            </div>
+
+            <!-- 
+                loading
+             -->
+            <div class="loading" data-loading></div>
+
+        </article>
+    </main>
+
+    <!-- 
+        Error 404
+     -->
+    <section class="error-content" data-error-content>
+
+        <h2 class="heading">404</h2>
+
+        <p class="body-1">Page not found!</p>
+
+        <a href="#/weather?lat=50.4500336&lon=30.5241361" class="btn-primary">
+            <span class="span">Go Home</span>
+        </a>
+
+    </section>
+
+</body>
+
+</html>

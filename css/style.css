@@ -137,7 +137,7 @@ body {
     background-image: var(--background-image);
     background-position: center;
     background-size: cover;
-    backdrop-filter: blur(10px)  brightness(70%);
+    backdrop-filter: blur(10px) brightness(70%);
     -webkit-backdrop-filter: blur(10px) brightness(70%);
 
     color: var(--on-background);
@@ -286,7 +286,7 @@ body {
 
 .card {
     background-color: var(--white-alpha-8);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: var(--on-surface);
     border: 2px solid rgba(255,255,255,0.2);

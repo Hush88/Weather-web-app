@@ -143,7 +143,7 @@ export const updateWeather = function (lat, lon) {
             <div class="weapper">
                 <p class="heading">${parseInt(temp)}&deg;<sup>c</sup></p>
 
-                <img src="../images/weather_icons/${icon}.png" alt="${description}" width="64" height="64" class="weather-icon">
+                <img src="images/weather_icons/${icon}.png" alt="${description}" width="64" height="64" class="weather-icon">
             </div>
 
             <p class="body-3">${description}</p>
@@ -365,7 +365,7 @@ export const updateWeather = function (lat, lon) {
 
                         <p class="body-3">${module.getHours(dateTimeUnix, timezone)}</p>
 
-                        <img src="../images/weather_icons/${icon}.png" alt="${description}" width="48" height="48"
+                        <img src="images/weather_icons/${icon}.png" alt="${description}" width="48" height="48"
                             loading="lazy" class="weather-icon" title="${description}">
 
                         <p class="body-3">${parseInt(temp)}&deg;</p>
@@ -402,7 +402,7 @@ export const updateWeather = function (lat, lon) {
 
                 li.innerHTML = `
                     <div class="icon-wrapper">
-                        <img src="../images/weather_icons/${icon}.png" alt="${description}" width="36"
+                        <img src="images/weather_icons/${icon}.png" alt="${description}" width="36"
                             height="36" class="weather-icon" title="${description}">
 
                         <span class="span">

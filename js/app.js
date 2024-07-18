@@ -394,7 +394,7 @@ export const updateWeather = function (lat, lon) {
                     weather,
                     dt_txt
                 } = forecastList[i];
-                const [{icon, description}] = weather;
+                const [{ icon, description }] = weather;
                 const date = new Date(dt_txt);
 
                 const li = document.createElement("li");

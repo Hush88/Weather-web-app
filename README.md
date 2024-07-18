@@ -17,7 +17,7 @@ It is a weather web application which is made in **HTML CSS JS**. This applicati
 - **Responsive Interface**: The interface changes depending on the device on which the application is running.
 
 ## Screenshot
-![Weather Web App Screenshot](../Weather%20WebApp/images/example.png)
+![Weather Web App Screenshot](images/example.png)
 
 ## Getting Started
 To start using this Weather App, simply visit the link above and enter your location in the search bar.
